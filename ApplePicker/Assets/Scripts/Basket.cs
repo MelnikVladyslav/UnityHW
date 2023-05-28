@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Basket : MonoBehaviour
 {
     public Text scoreText;
+    public GameObject FinalPanel;
     int score = 0;
 
     // Start is called before the first frame update
@@ -25,6 +26,11 @@ public class Basket : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             transform.position = new Vector2(transform.position.x + 5, transform.position.y);
+        }
+
+        if (score >= 10)
+        {
+            FinalPanel.gameObject.SetActive(true);
         }
     }
 
