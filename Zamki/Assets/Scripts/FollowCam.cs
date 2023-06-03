@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowCam : MonoBehaviour
 {
-    public static GameObject POI; //посилання на ширик, який зараз литить
+    public static GameObject POI; //посилання на кулю, яка зараз летить
     [Header("Set in Inspector")]
     public float easing = 0.05f;
     public Vector2 minXY = Vector2.zero;
